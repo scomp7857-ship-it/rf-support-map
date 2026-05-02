@@ -45,7 +45,7 @@
 </style>
 </head>
 <body class="min-h-screen">
-<div x-data="app()" x-init="init()" class="md:flex h-screen w-screen overflow-hidden relative">
+<div x-data="app()" class="md:flex h-screen w-screen overflow-hidden relative">
 
   <!-- MOBILE HEADER -->
   <header class="md:hidden fixed top-0 inset-x-0 z-30 glass px-3 py-2 flex items-center gap-2 border-b border-[var(--line)]">
@@ -502,6 +502,7 @@ return {
   renderMap(){
     const geo = JSON.parse(document.getElementById('geo').textContent);
     const svg = d3.select('#map');
+    svg.selectAll('*').remove();
     const node = svg.node();
     const W = node.clientWidth, H = node.clientHeight;
     const isMobile = W < 768;
