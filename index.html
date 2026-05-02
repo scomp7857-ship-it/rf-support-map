@@ -496,8 +496,9 @@ return {
   select(id){
     this.selected = id;
     d3.selectAll('.map-region').classed('selected', d => d.id===id);
+    // raise selected path within its own layer (so it doesn't cover dots)
     const node = d3.selectAll('.map-region').filter(d=>d.id===id).node();
-    if (node) node.parentNode.appendChild(node);
+    if (node && node.parentNode) node.parentNode.appendChild(node);
   },
   reset(){ this.selected=null; d3.selectAll('.map-region').classed('selected', false); },
   renderMap(){
@@ -514,15 +515,17 @@ return {
     svg.attr('viewBox', `0 0 ${W} ${H}`).attr('preserveAspectRatio','xMidYMid meet');
     svg.append('defs').append('clipPath').attr('id','mapClip').append('rect').attr('width', W).attr('height', H);
     const g = svg.append('g').attr('clip-path','url(#mapClip)');
+    const gPaths = g.append('g').attr('class','layer-paths');
+    const gDots  = g.append('g').attr('class','layer-dots').attr('pointer-events','none');
 
-    g.selectAll('path').data(geo.features).enter().append('path')
+    gPaths.selectAll('path').data(geo.features).enter().append('path')
       .attr('class', d=> 'map-region' + (this.REGIONS[d.id]?.influence>=4 ? ' ring-high':''))
       .attr('d', path)
       .attr('fill', d => this.colorScale(this.REGIONS[d.id]?.severity || 0));
 
     // veterans-in-power dots: place a small orange dot at centroid for regions with >0 vets
     const vetFeats = geo.features.filter(f=> (this.REGIONS[f.id]?.vets_count||0)>0);
-    const vetG = g.selectAll('g.vet-dot').data(vetFeats).enter().append('g').attr('class','vet-dot')
+    const vetG = gDots.selectAll('g.vet-dot').data(vetFeats).enter().append('g').attr('class','vet-dot')
       .attr('transform', d=> {
         const c = path.centroid(d);
         return (isFinite(c[0]) && isFinite(c[1])) ? `translate(${c[0]},${c[1]})` : 'translate(-9999,-9999)';
