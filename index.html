@@ -31,13 +31,36 @@
   details>summary::-webkit-details-marker{display:none;}
   .src a{ color:#8ec6ff; text-decoration:underline; word-break:break-all;}
   .kbd{ font-family:ui-monospace,Menlo,Consolas; font-size:11px; padding:1px 6px; border:1px solid #2a3551; border-radius:4px; color:#aeb9d0; background:#11182a;}
+  /* mobile */
+  @media (max-width: 767px){
+    .map-region:hover{ stroke-width:.5; filter:none; } /* kill hover on touch */
+    .map-region.selected{ stroke-width:1.5; }
+    .panel-enter{ animation: slideUp .3s cubic-bezier(.2,.7,.2,1) both; }
+    @keyframes slideUp { from{ transform: translateY(40px); opacity:0 } to{ transform:none; opacity:1 } }
+  }
+  .sheet-enter{ animation: sheetUp .3s cubic-bezier(.2,.7,.2,1) both; }
+  @keyframes sheetUp { from{ transform: translateY(100%);} to{ transform:none;} }
 </style>
 </head>
 <body class="min-h-screen">
-<div x-data="app()" x-init="init()" class="flex h-screen w-screen overflow-hidden">
+<div x-data="app()" x-init="init()" class="md:flex h-screen w-screen overflow-hidden relative">
 
-  <!-- LEFT SIDEBAR -->
-  <aside class="glass w-[360px] shrink-0 flex flex-col h-screen">
+  <!-- MOBILE HEADER -->
+  <header class="md:hidden fixed top-0 inset-x-0 z-30 glass px-3 py-2 flex items-center gap-2 border-b border-[var(--line)]">
+    <button @click="sheetOpen=true" class="p-2 -ml-1 rounded hover:bg-[var(--panel2)]" aria-label="меню">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+    </button>
+    <div class="flex-1 min-w-0">
+      <div class="text-[9px] uppercase tracking-[0.2em] text-[var(--muted)] leading-none">OSINT · 2024–2026</div>
+      <div class="text-xs font-semibold gradient-title truncate leading-tight">Слабкі ланки РФ</div>
+    </div>
+    <button @click="sheetOpen=true" class="p-2 -mr-1 rounded hover:bg-[var(--panel2)]" aria-label="рейтинг">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h12M3 18h6"/></svg>
+    </button>
+  </header>
+
+  <!-- LEFT SIDEBAR (desktop) -->
+  <aside class="glass hidden md:flex w-[360px] shrink-0 flex-col h-screen">
     <div class="p-4 border-b border-[var(--line)]">
       <div class="text-[10px] uppercase tracking-[0.2em] text-[var(--muted)]">OSINT · 2024–2026</div>
       <h1 class="text-lg font-semibold gradient-title leading-tight">Слабкі ланки РФ: підтримка військових і ветеранів</h1>
@@ -104,8 +127,8 @@
   </aside>
 
   <!-- MAP AREA -->
-  <main class="flex-1 relative">
-    <div class="absolute top-3 left-1/2 -translate-x-1/2 z-10 glass rounded-full px-4 py-1.5 text-[11px] flex gap-3 items-center">
+  <main class="flex-1 relative h-screen pt-12 md:pt-0">
+    <div class="hidden md:flex absolute top-3 left-1/2 -translate-x-1/2 z-10 glass rounded-full px-4 py-1.5 text-[11px] gap-3 items-center">
       <span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-[#ff3838]"></span>важко</span>
       <span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-[#b32d2d]"></span>значно</span>
       <span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-[#8a4823]"></span>помітно</span>
@@ -115,14 +138,22 @@
       <span class="flex items-center gap-1"><svg width="12" height="12"><circle cx="6" cy="6" r="4" fill="none" stroke="#ffb84d" stroke-width="1.6" stroke-dasharray="3 2"/></svg>висока впливоспроможність</span>
     </div>
 
-    <div class="absolute top-3 right-3 z-10 glass rounded-md p-2 text-[11px] text-[var(--muted)] flex gap-2 items-center">
-      <span class="kbd">⌫</span><span>скинути</span>
+    <!-- mobile compact legend -->
+    <div class="md:hidden absolute top-14 left-1/2 -translate-x-1/2 z-10 glass rounded-full px-3 py-1 text-[10px] flex gap-2 items-center">
+      <span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-[#ff3838]"></span>важко</span>
+      <span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-[#b32d2d]"></span>значно</span>
+      <span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-[#8a4823]"></span>помітно</span>
+      <span class="flex items-center gap-1"><svg width="10" height="10"><circle cx="5" cy="5" r="3.5" fill="none" stroke="#ffb84d" stroke-width="1.4" stroke-dasharray="2 2"/></svg>впл.</span>
+    </div>
+
+    <div class="hidden md:flex absolute top-3 right-3 z-10 glass rounded-md p-2 text-[11px] text-[var(--muted)] gap-2 items-center">
+      <span class="kbd">Esc</span><span>скинути</span>
       <button @click="reset()" class="ml-1 px-2 py-0.5 rounded bg-[var(--panel2)] border border-[var(--line)] text-white text-[11px]">×</button>
     </div>
 
-    <svg id="map" class="w-full h-full"></svg>
+    <svg id="map" class="w-full h-full block"></svg>
 
-    <div id="tooltip" class="glass rounded-lg p-3 absolute pointer-events-none opacity-0 max-w-[300px] z-20 shadow-2xl" style="left:0;top:0;">
+    <div id="tooltip" class="hidden md:block glass rounded-lg p-3 absolute pointer-events-none opacity-0 max-w-[300px] z-20 shadow-2xl" style="left:0;top:0;">
       <div class="text-sm font-semibold" x-text="tooltipData?.name_ua || ''"></div>
       <div class="text-[11px] text-[var(--muted)] mb-2">
         <span x-text="tooltipData?.type+' · '+tooltipData?.fd"></span>
@@ -142,10 +173,54 @@
     </div>
   </main>
 
+  <!-- MOBILE BOTTOM SHEET (filters + ranking) -->
+  <div x-show="sheetOpen" x-transition.opacity class="md:hidden fixed inset-0 z-40">
+    <div @click="sheetOpen=false" class="absolute inset-0 bg-black/60"></div>
+    <div x-show="sheetOpen" class="sheet-enter absolute bottom-0 inset-x-0 max-h-[85vh] flex flex-col glass rounded-t-2xl border-t border-[var(--line)]">
+      <div class="flex justify-center pt-2 pb-1"><div class="w-10 h-1 rounded-full bg-[var(--line)]"></div></div>
+      <div class="px-4 pb-2 flex items-center justify-between">
+        <div class="text-[11px] uppercase tracking-wider text-[var(--muted)]">Регіони <span x-text="filtered.length+' / '+Object.keys(REGIONS).length"></span></div>
+        <button @click="sheetOpen=false" class="text-[var(--muted)] text-2xl leading-none">×</button>
+      </div>
+      <div class="px-4 pb-2 space-y-2 border-b border-[var(--line)]">
+        <input type="text" x-model="search" placeholder="Пошук регіону…" class="w-full bg-[var(--panel2)] border border-[var(--line)] rounded-md px-3 py-2 text-sm focus:outline-none focus:border-[var(--accent2)]"/>
+        <div class="flex gap-1 overflow-x-auto scrollbar -mx-1 px-1 pb-1">
+          <template x-for="opt in [{k:'composite',l:'Впливоспр.'},{k:'severity',l:'Проблеми'},{k:'losses',l:'Втрати'}]">
+            <button @click="sort=opt.k" class="shrink-0 px-2.5 py-1 rounded text-xs border" :class="sort===opt.k ? 'bg-[var(--accent)]/20 border-[var(--accent)] text-white' : 'bg-[var(--panel2)] border-[var(--line)] text-[var(--muted)]'" x-text="opt.l"></button>
+          </template>
+          <select x-model="fdFilter" class="shrink-0 bg-[var(--panel2)] border border-[var(--line)] rounded text-xs px-2">
+            <option value="">Всі ФО</option>
+            <template x-for="f in ['ЦФО','ПФО','СЗФО','ПдФО','СКФО','УрФО','СФО','ДФО']"><option :value="f" x-text="f"></option></template>
+          </select>
+        </div>
+      </div>
+      <ol class="overflow-y-auto scrollbar flex-1 px-2 pb-4 space-y-1">
+        <template x-for="(r, idx) in filtered" :key="r.id">
+          <li>
+            <button @click="select(r.id); sheetOpen=false" class="w-full text-left px-2 py-2 rounded-md hover:bg-[var(--panel2)] flex items-center gap-2"
+              :class="selected===r.id ? 'bg-[var(--panel2)] ring-1 ring-[var(--accent)]/50' : ''">
+              <div class="text-[10px] w-5 text-[var(--muted)] tabular-nums" x-text="idx+1"></div>
+              <div class="w-1.5 h-9 rounded-sm" :style="`background:${colorScale(r.severity)}`"></div>
+              <div class="flex-1 min-w-0">
+                <div class="text-sm truncate" x-text="r.name_ua"></div>
+                <div class="text-[11px] text-[var(--muted)] flex gap-1 items-center">
+                  <span x-text="r.fd"></span><span>·</span>
+                  <span>проб.<span class="text-white ml-0.5" x-text="r.severity.toFixed(1)"></span></span><span>·</span>
+                  <span>впл.<span class="text-[var(--accent2)] ml-0.5" x-text="r.influence.toFixed(1)"></span></span>
+                </div>
+              </div>
+              <div class="text-[10px] tabular-nums text-[var(--muted)]" x-text="r.composite.toFixed(1)"></div>
+            </button>
+          </li>
+        </template>
+      </ol>
+    </div>
+  </div>
+
   <!-- DOSSIER PANEL -->
   <div x-show="selectedRegion" x-transition.opacity class="fixed inset-0 z-30 pointer-events-none">
     <div @click="reset()" class="absolute inset-0 bg-black/40 pointer-events-auto"></div>
-    <aside x-show="selectedRegion" class="panel-enter pointer-events-auto absolute right-0 top-0 h-screen w-full max-w-[640px] glass border-l border-[var(--line)] overflow-y-auto scrollbar">
+    <aside x-show="selectedRegion" class="panel-enter pointer-events-auto absolute right-0 top-0 h-screen w-full md:max-w-[640px] glass md:border-l border-[var(--line)] overflow-y-auto scrollbar">
       <template x-if="selectedRegion">
         <div class="p-6">
           <div class="flex items-start justify-between gap-4">
@@ -340,10 +415,11 @@ function app(){
 return {
   REGIONS: window.REGIONS || {},
   search:'', fdFilter:'', sort:'composite',
-  selected:null, tooltipData:null,
+  selected:null, tooltipData:null, sheetOpen:false, isTouch:false,
   init(){
     this.REGIONS = JSON.parse(document.getElementById('data').textContent);
     window.REGIONS = this.REGIONS;
+    this.isTouch = matchMedia('(hover: none)').matches || window.innerWidth < 768;
     this.renderMap();
   },
   get filtered(){
@@ -376,7 +452,8 @@ return {
     const svg = d3.select('#map');
     const node = svg.node();
     const W = node.clientWidth, H = node.clientHeight;
-    const projection = d3.geoMercator().rotate([-100,0]).fitSize([W*0.95, H*0.92], geo);
+    const isMobile = W < 768;
+    const projection = d3.geoMercator().rotate([-100,0]).fitSize([W*(isMobile?1.0:0.95), H*(isMobile?0.95:0.92)], geo);
     const path = d3.geoPath(projection);
 
     const g = svg.append('g');
@@ -386,11 +463,13 @@ return {
       .attr('d', path)
       .attr('fill', d => this.colorScale(this.REGIONS[d.id]?.severity || 0))
       .on('mouseenter', (e,d) => {
+        if (this.isTouch) return;
         const r = this.REGIONS[d.id] || { name_ua: d.properties.name, name_ru: d.properties.name, fd:'?', type:'?'};
         this.tooltipData = r;
         d3.select('#tooltip').style('opacity', 1);
       })
       .on('mousemove', (e) => {
+        if (this.isTouch) return;
         const t = document.getElementById('tooltip');
         const rect = t.getBoundingClientRect();
         let x = e.clientX + 14, y = e.clientY + 14;
@@ -400,7 +479,7 @@ return {
       })
       .on('mouseleave', ()=> { d3.select('#tooltip').style('opacity', 0); })
       .on('click', (e,d)=> {
-        if (this.REGIONS[d.id]) this.select(d.id);
+        if (this.REGIONS[d.id] && this.REGIONS[d.id].severity > 0) this.select(d.id);
       });
 
     // zoom
@@ -408,10 +487,15 @@ return {
     svg.call(zoom);
 
     // resize
+    let rt;
     window.addEventListener('resize', ()=>{
-      const W=node.clientWidth,H=node.clientHeight;
-      projection.fitSize([W*0.95, H*0.92], geo);
-      g.selectAll('path').attr('d', path);
+      clearTimeout(rt); rt = setTimeout(()=>{
+        const W=node.clientWidth,H=node.clientHeight;
+        const m = W<768;
+        projection.fitSize([W*(m?1.0:0.95), H*(m?0.95:0.92)], geo);
+        g.selectAll('path').attr('d', path);
+        this.isTouch = matchMedia('(hover: none)').matches || W < 768;
+      }, 120);
     });
   }
 }
