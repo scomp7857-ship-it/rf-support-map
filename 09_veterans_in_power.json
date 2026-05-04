@@ -6,137 +6,409 @@
       "https://www.currenttime.tv/a/uchastnikov-vtorzheniya-ukrainu-privodyat-vo-vlast-rossia/33727391.html",
       "https://www.vedomosti.ru/politics/articles/2025/09/18/1140049-870-uchastnikov-spetsoperatsii-pobedili-na-viborah",
       "https://ru.wikipedia.org/wiki/%D0%92%D1%80%D0%B5%D0%BC%D1%8F_%D0%B3%D0%B5%D1%80%D0%BE%D0%B5%D0%B2",
-      "https://fedpress.ru/news/77/policy/3366291"
+      "https://fedpress.ru/news/77/policy/3366291",
+      "svo_executive_rating.pdf (внутренний аналитический отчёт, 04.05.2026)"
     ],
     "totals": {
       "paid_positions": 161,
       "with_unpaid_deputy_mandates": 1450,
       "deputies_2025": 870,
-      "vremya_geroev_first_cohort_appointments": 43
-    }
+      "vremya_geroev_first_cohort_appointments": 43,
+      "vremya_geroev_total_appointments_end_2025": 70,
+      "regional_clones_active": 63,
+      "fund_zashchitniki_otechestva_budget_2025_actual_billion_rub": 42.66,
+      "fund_zashchitniki_otechestva_budget_2025_plan_billion_rub": 13.7,
+      "fund_veterans_supported_apr_2025": 108551
+    },
+    "updated": "2026-05-04"
   },
-  "RU-BA": {"governor_veteran": false, "vice_gov": [], "reg_duma": [], "mayors": [], "deputies": [], "notes": "Регион участвует во «Время героев»; конкретных приоритетных назначений в открытых источниках не зафиксировано."},
-  "RU-TA": {"governor_veteran": false, "vice_gov": [], "reg_duma": [], "mayors": [], "deputies": [], "notes": "Региональная программа «Батырлар. Герои Татарстана»; рекрутинг ветеранов на муниц.уровень. Поименные назначения публично не агрегированы.", "source": "https://www.idelreal.org/a/33318880.html"},
-  "RU-BU": {"governor_veteran": false, "vice_gov": [], "reg_duma": [], "mayors": [], "deputies": [], "notes": "Региональная программа «Патриоты Бурятии», стажировки в АП и Госдуме.", "source": "https://egov-buryatia.ru/press_center/news/detail.php?ID=189300"},
-  "RU-TY": {"governor_veteran": false, "vice_gov": [], "reg_duma": [], "mayors": [], "deputies": [], "notes": "Открытых данных о приоритетных SVO-назначениях не найдено."},
+  "RU-BA": {
+    "governor_veteran": false,
+    "vice_gov": [],
+    "reg_duma": [],
+    "mayors": [
+      {
+        "name": "Оскар Ситдиков",
+        "position": "помощник Главы Республики Башкортостан",
+        "channel": "Время героев (наставник — Радий Хабиров)",
+        "since": "2025",
+        "source": "https://prospect.com.ru/"
+      }
+    ],
+    "deputies": [],
+    "notes": "Регион участвует во «Время героев»; конкретных приоритетных назначений в открытых источниках не зафиксировано."
+  },
+  "RU-TA": {
+    "governor_veteran": false,
+    "vice_gov": [],
+    "reg_duma": [],
+    "mayors": [],
+    "deputies": [],
+    "notes": "Региональная программа «Батырлар. Герои Татарстана»; рекрутинг ветеранов на муниц.уровень. Поименные назначения публично не агрегированы.",
+    "source": "https://www.idelreal.org/a/33318880.html"
+  },
+  "RU-BU": {
+    "governor_veteran": false,
+    "vice_gov": [],
+    "reg_duma": [],
+    "mayors": [],
+    "deputies": [],
+    "notes": "Региональная программа «Патриоты Бурятии», стажировки в АП и Госдуме.",
+    "source": "https://egov-buryatia.ru/press_center/news/detail.php?ID=189300"
+  },
+  "RU-TY": {
+    "governor_veteran": false,
+    "vice_gov": [],
+    "reg_duma": [],
+    "mayors": [],
+    "deputies": [
+      {
+        "name": "Буян Куулар",
+        "position": "министр по делам молодежи Республики Тыва",
+        "unit": "младший сержант",
+        "rank": "Герой России (2024)",
+        "channel": "Время героев",
+        "since": "2025-12",
+        "previous": "депутат Верховного Хурала Тувы (09.2024, ЕР)",
+        "note": "апрель 2026 — заявка на праймериз ЕР в Госдуму по Тувинскому округу №37",
+        "source": "https://tass.ru/"
+      }
+    ],
+    "notes": "Открытых данных о приоритетных SVO-назначениях не найдено."
+  },
   "RU-DA": {
     "governor_veteran": false,
     "vice_gov": [],
     "reg_duma": [],
     "mayors": [],
     "deputies": [
-      {"name": "Темирлан Абуталимов", "unit": "командир роты, позывной \"Омск\"", "position": "врио министра по национальной политике и делам религий Республики Дагестан", "since": "2025-09-01", "channel": "Время героев", "rank": "Герой России", "war_crimes_allegation": "Украина обвиняет в убийстве военнопленных на Запорожском направлении", "source": "https://meduza.io/news/2025/09/02/byvshiy-uchastnik-vtorzheniya-v-ukrainu-stal-ministrom-v-dagestane"},
-      {"name": "Табир Маликов", "position": "управленческая должность в Дагестане", "since": "2025", "source": "https://mirmol.ru/oficialno/uchastniki-svo-temirlan-abutalimov-i-tabir-malikov-zajmut-upravlencheskie-dolzhnosti-v-dagestane/"}
+      {
+        "name": "Темирлан Абуталимов",
+        "unit": "командир роты, позывной \"Омск\"",
+        "position": "врио министра по национальной политике и делам религий Республики Дагестан",
+        "since": "2025-09-01",
+        "channel": "Время героев",
+        "rank": "Герой России",
+        "war_crimes_allegation": "Украина обвиняет в убийстве военнопленных на Запорожском направлении",
+        "source": "https://meduza.io/news/2025/09/02/byvshiy-uchastnik-vtorzheniya-v-ukrainu-stal-ministrom-v-dagestane"
+      },
+      {
+        "name": "Табир Маликов",
+        "position": "управленческая должность в Дагестане",
+        "since": "2025",
+        "source": "https://mirmol.ru/oficialno/uchastniki-svo-temirlan-abutalimov-i-tabir-malikov-zajmut-upravlencheskie-dolzhnosti-v-dagestane/"
+      }
     ]
   },
   "RU-KRS": {
     "governor_veteran": false,
     "vice_gov": [
-      {"name": "Сергей Фофанов", "unit": "не уточнено; орден Мужества, медаль «За отвагу»", "position": "заместитель губернатора по промышленности, экологии и сельскому хозяйству", "since": "2026-02-11", "channel": "прямое назначение (А.Хинштейн)", "source": "https://kpravda.ru/2026/02/11/sergej-fofanov-zajmyot-dolzhnost-zamgubernatora-kurskoj-oblasti/"}
+      {
+        "name": "Сергей Фофанов",
+        "unit": "не уточнено; орден Мужества, медаль «За отвагу»",
+        "position": "заместитель губернатора по промышленности, экологии и сельскому хозяйству",
+        "since": "2026-02-11",
+        "channel": "прямое назначение (А.Хинштейн)",
+        "source": "https://kpravda.ru/2026/02/11/sergej-fofanov-zajmyot-dolzhnost-zamgubernatora-kurskoj-oblasti/"
+      }
     ],
     "reg_duma": [],
     "mayors": [],
     "deputies": [
-      {"name": "Алексей Кондратьев", "position": "сенатор Совета Федерации от Курской области", "since": "2024", "channel": "Время героев", "previous": "глава Тамбова", "source": "https://fedpress.ru/news/77/policy/3366291"}
+      {
+        "name": "Алексей Кондратьев",
+        "position": "сенатор Совета Федерации от Курской области",
+        "since": "2024",
+        "channel": "Время героев",
+        "previous": "глава Тамбова",
+        "source": "https://fedpress.ru/news/77/policy/3366291"
+      }
     ],
     "notes": "Курская обл. — единственный кейс среди 10 SVO-вицегубернаторов, где ветеран курирует реальную отрасль (промышленность/АПК)."
   },
-  "RU-KEM": {"governor_veteran": false, "vice_gov": [], "reg_duma": [], "mayors": [], "deputies": [], "notes": "Региональная программа «СВОи Герои. Куzбасс» — старт 2025-09-01; обучение 1 год, диплом ГМУ.", "source": "https://kuzbass85.ru/2025/03/04/svoi-geroi-kuzbass-glavnoe-o-programme/"},
+  "RU-KEM": {
+    "governor_veteran": false,
+    "vice_gov": [],
+    "reg_duma": [],
+    "mayors": [],
+    "deputies": [],
+    "notes": "Региональная программа «СВОи Герои. Куzбасс» — старт 2025-09-01; обучение 1 год, диплом ГМУ.",
+    "source": "https://kuzbass85.ru/2025/03/04/svoi-geroi-kuzbass-glavnoe-o-programme/"
+  },
   "RU-OMS": {
     "governor_veteran": false,
     "vice_gov": [],
     "reg_duma": [],
     "mayors": [
-      {"name": "Александр Игошин", "position": "глава Управления патриотического воспитания г. Омска (новый орган)", "since": "2025-04-22", "source": "https://www.omsk.kp.ru/online/news/6340835/"}
+      {
+        "name": "Александр Игошин",
+        "position": "глава Управления патриотического воспитания г. Омска (новый орган)",
+        "since": "2025-04-22",
+        "source": "https://www.omsk.kp.ru/online/news/6340835/"
+      }
     ],
     "deputies": [],
     "notes": "В мэрии Омска создано отдельное Управление патриот.воспитания специально под ветерана СВО."
   },
   "RU-IRK": {
     "governor_veteran": false,
-    "vice_gov": [{"name": "не идентифицирован публично", "position": "заместитель губернатора (мобилизационная политика / поддержка семей военных)", "since": "2024-2025", "source": "https://www.svoboda.org/a/33710567.html"}],
+    "vice_gov": [
+      {
+        "name": "не идентифицирован публично",
+        "position": "заместитель губернатора (мобилизационная политика / поддержка семей военных)",
+        "since": "2024-2025",
+        "source": "https://www.svoboda.org/a/33710567.html"
+      }
+    ],
     "reg_duma": [],
     "mayors": [],
-    "deputies": [{"name": "не идентифицирован публично", "position": "спикер думы Иркутского района", "since": "2024-2025", "source": "https://www.svoboda.org/a/33710567.html"}]
+    "deputies": [
+      {
+        "name": "не идентифицирован публично",
+        "position": "спикер думы Иркутского района",
+        "since": "2024-2025",
+        "source": "https://www.svoboda.org/a/33710567.html"
+      }
+    ]
   },
-  "RU-SVE": {"governor_veteran": false, "vice_gov": [], "reg_duma": [], "mayors": [], "deputies": [], "notes": "УрФО — повпред Артем Жога (см. федеральный уровень). Региональная программа «Герои Южного Урала» затрагивает Свердловск/Челябинск.", "source": "https://www.cheltv.ru/uchastniki-programmy-geroi-yuzhnogo-urala-pristupili/"},
+  "RU-SVE": {
+    "governor_veteran": false,
+    "vice_gov": [],
+    "reg_duma": [],
+    "mayors": [],
+    "deputies": [],
+    "notes": "УрФО — повпред Артем Жога (см. федеральный уровень). Региональная программа «Герои Южного Урала» затрагивает Свердловск/Челябинск.",
+    "source": "https://www.cheltv.ru/uchastniki-programmy-geroi-yuzhnogo-urala-pristupili/"
+  },
   "RU-SAR": {
     "governor_veteran": false,
     "vice_gov": [],
     "reg_duma": [],
     "mayors": [],
     "deputies": [
-      {"name": "Михаил Попов", "position": "заместитель министра образования Саратовской области", "since": "2024-2025", "previous": "учитель физкультуры", "source": "https://www.svoboda.org/a/33710567.html"}
+      {
+        "name": "Михаил Попов",
+        "position": "заместитель министра образования Саратовской области",
+        "since": "2024-2025",
+        "previous": "учитель физкультуры",
+        "source": "https://www.svoboda.org/a/33710567.html"
+      }
     ],
     "notes": "Один из немногих кейсов реального «соц.лифта» — рядовой контрактник стал замминистра."
   },
-  "RU-CU": {"governor_veteran": false, "vice_gov": [], "reg_duma": [], "mayors": [], "deputies": [], "notes": "Открытых данных о приоритетных SVO-назначениях не найдено."},
-  "RU-ME": {"governor_veteran": false, "vice_gov": [], "reg_duma": [], "mayors": [], "deputies": [], "notes": "Открытых данных нет."},
-  "RU-ARK": {"governor_veteran": false, "vice_gov": [], "reg_duma": [], "mayors": [], "deputies": [], "notes": "Региональная программа «Защитники. Под крылом Архангела» (Поморье), запуск 2025.", "source": "https://pravdasevera.ru/2025/06/16/68500f56490c38a31607a96e.html"},
-  "RU-ZAB": {"governor_veteran": false, "vice_gov": [], "reg_duma": [], "mayors": [], "deputies": [], "notes": "Открытых данных о приоритетных назначениях не найдено."},
-  "RU-KGN": {"governor_veteran": false, "vice_gov": [], "reg_duma": [], "mayors": [], "deputies": [], "notes": "Открытых данных нет; возможные муниц.депутаты не публикуются поименно."},
+  "RU-CU": {
+    "governor_veteran": false,
+    "vice_gov": [],
+    "reg_duma": [],
+    "mayors": [],
+    "deputies": [],
+    "notes": "Открытых данных о приоритетных SVO-назначениях не найдено."
+  },
+  "RU-ME": {
+    "governor_veteran": false,
+    "vice_gov": [],
+    "reg_duma": [],
+    "mayors": [],
+    "deputies": [],
+    "notes": "Открытых данных нет."
+  },
+  "RU-ARK": {
+    "governor_veteran": false,
+    "vice_gov": [],
+    "reg_duma": [],
+    "mayors": [],
+    "deputies": [],
+    "notes": "Региональная программа «Защитники. Под крылом Архангела» (Поморье), запуск 2025.",
+    "source": "https://pravdasevera.ru/2025/06/16/68500f56490c38a31607a96e.html"
+  },
+  "RU-ZAB": {
+    "governor_veteran": false,
+    "vice_gov": [],
+    "reg_duma": [],
+    "mayors": [],
+    "deputies": [],
+    "notes": "Открытых данных о приоритетных назначениях не найдено."
+  },
+  "RU-KGN": {
+    "governor_veteran": false,
+    "vice_gov": [],
+    "reg_duma": [],
+    "mayors": [],
+    "deputies": [],
+    "notes": "Открытых данных нет; возможные муниц.депутаты не публикуются поименно."
+  },
   "RU-BEL": {
     "governor_veteran": false,
     "vice_gov": [],
     "reg_duma": [],
     "mayors": [],
     "deputies": [
-      {"name": "Сергей Шевченко", "position": "депутат городского совета Белгорода", "since": "2024-2025", "background": "альпинист, активист, ветеран СВО", "source": "https://www.belpressa.ru/politics/vlast/72287.html"}
+      {
+        "name": "Сергей Шевченко",
+        "position": "депутат городского совета Белгорода",
+        "since": "2024-2025",
+        "background": "альпинист, активист, ветеран СВО",
+        "source": "https://www.belpressa.ru/politics/vlast/72287.html"
+      }
     ],
     "notes": "Прифронтовой регион; статус ВБД распространён, но крупных назначений на уровне правительства нет."
   },
-  "RU-BRY": {"governor_veteran": false, "vice_gov": [], "reg_duma": [], "mayors": [], "deputies": [], "notes": "Прифронтовой; крупных публичных SVO-назначений в правительстве не зафиксировано."},
-  "RU-PSK": {"governor_veteran": false, "vice_gov": [], "reg_duma": [], "mayors": [], "deputies": [], "notes": "Открытых данных нет."},
-  "RU-CE": {"governor_veteran": false, "vice_gov": [], "reg_duma": [], "mayors": [], "deputies": [], "notes": "Чечня формирует отдельный канал через подразделение «Ахмат»; муниц.депутаты-ветераны массовы, поименный список не публикуется."},
+  "RU-BRY": {
+    "governor_veteran": false,
+    "vice_gov": [],
+    "reg_duma": [],
+    "mayors": [],
+    "deputies": [],
+    "notes": "Прифронтовой; крупных публичных SVO-назначений в правительстве не зафиксировано."
+  },
+  "RU-PSK": {
+    "governor_veteran": false,
+    "vice_gov": [],
+    "reg_duma": [],
+    "mayors": [],
+    "deputies": [],
+    "notes": "Открытых данных нет."
+  },
+  "RU-CE": {
+    "governor_veteran": false,
+    "vice_gov": [],
+    "reg_duma": [],
+    "mayors": [],
+    "deputies": [],
+    "notes": "Чечня формирует отдельный канал через подразделение «Ахмат»; муниц.депутаты-ветераны массовы, поименный список не публикуется."
+  },
   "RU-SE": {
     "governor_veteran": false,
     "vice_gov": [],
     "reg_duma": [],
     "mayors": [],
     "deputies": [
-      {"name": "Юрий Абаев", "unit": "командир мотострелкового батальона, Запорожское направление", "position": "министр труда и социального развития Республики Северная Осетия — Алания", "since": "2025-05-06", "channel": "Время героев", "rank": "Герой России", "war_crimes_allegation": "Украина обвиняет в расстреле военнопленных", "source": "https://lenta.ru/news/2025/05/06/geroy-rossii-yuriy-abaev-vozglavil-mintrud-severnoy-osetii-posle-programmy-vremya-geroev/"}
+      {
+        "name": "Юрий Абаев",
+        "unit": "командир мотострелкового батальона, Запорожское направление",
+        "position": "министр труда и социального развития Республики Северная Осетия — Алания",
+        "since": "2025-05-06",
+        "channel": "Время героев",
+        "rank": "Герой России",
+        "war_crimes_allegation": "Украина обвиняет в расстреле военнопленных",
+        "source": "https://lenta.ru/news/2025/05/06/geroy-rossii-yuriy-abaev-vozglavil-mintrud-severnoy-osetii-posle-programmy-vremya-geroev/"
+      }
     ]
   },
-  "RU-KL": {"governor_veteran": false, "vice_gov": [], "reg_duma": [], "mayors": [], "deputies": [], "notes": "Открытых данных о приоритетных назначениях нет."},
+  "RU-KL": {
+    "governor_veteran": false,
+    "vice_gov": [],
+    "reg_duma": [],
+    "mayors": [],
+    "deputies": [],
+    "notes": "Открытых данных о приоритетных назначениях нет."
+  },
   "RU-SA": {
     "governor_veteran": false,
     "vice_gov": [],
     "reg_duma": [],
     "mayors": [
-      {"name": "Вячеслав Слепцов †", "position": "глава Адычинского наслега", "since": "2024", "died": "2024-12", "channel": "выборы во время отпуска; МО не отпустило с фронта", "source": "https://sakhapress.ru/archives/301428"}
+      {
+        "name": "Вячеслав Слепцов †",
+        "position": "глава Адычинского наслега",
+        "since": "2024",
+        "died": "2024-12",
+        "channel": "выборы во время отпуска; МО не отпустило с фронта",
+        "source": "https://sakhapress.ru/archives/301428"
+      }
     ],
     "deputies": [
-      {"name": "Игорь Юргин", "unit": "штурмовой отряд «Чёрная Мамба»", "position": "врио министра по делам молодежи и социальным коммуникациям Республики Саха (Якутия)", "since": "2024-09", "channel": "Время героев", "rank": "Герой России", "source": "https://rg.ru/2024/09/24/reg-dfo/rotaciia-po-iakutski.html"},
-      {"name": "Георгий Андреев", "position": "министр предпринимательства правительства Якутии", "previous": "заместитель министра инноваций", "source": "https://www.svoboda.org/a/33710567.html"}
+      {
+        "name": "Игорь Юргин",
+        "unit": "штурмовой отряд «Чёрная Мамба»",
+        "position": "врио министра по делам молодежи и социальным коммуникациям Республики Саха (Якутия)",
+        "since": "2024-09",
+        "channel": "Время героев",
+        "rank": "Герой России",
+        "source": "https://rg.ru/2024/09/24/reg-dfo/rotaciia-po-iakutski.html"
+      },
+      {
+        "name": "Георгий Андреев",
+        "position": "министр предпринимательства правительства Якутии",
+        "previous": "заместитель министра инноваций",
+        "source": "https://www.svoboda.org/a/33710567.html"
+      }
     ]
   },
-  "RU-IN": {"governor_veteran": false, "vice_gov": [], "reg_duma": [], "mayors": [], "deputies": [], "notes": "Открытых данных о приоритетных SVO-назначениях не найдено."},
+  "RU-IN": {
+    "governor_veteran": false,
+    "vice_gov": [],
+    "reg_duma": [],
+    "mayors": [],
+    "deputies": [],
+    "notes": "Открытых данных о приоритетных SVO-назначениях не найдено."
+  },
   "RU-ORE": {
     "governor_veteran": false,
     "vice_gov": [],
     "reg_duma": [],
     "mayors": [
-      {"name": "Сергей Салмин", "position": "мэр Оренбурга", "note": "в феврале 2025 ушёл добровольцем в зону СВО (обратное движение, не «фронт→власть»)", "since_position": "до 2025-02", "source": "https://ura.news/news/1052760337"}
+      {
+        "name": "Сергей Салмин",
+        "position": "мэр Оренбурга",
+        "note": "в феврале 2025 ушёл добровольцем в зону СВО (обратное движение, не «фронт→власть»)",
+        "since_position": "до 2025-02",
+        "source": "https://ura.news/news/1052760337"
+      }
     ],
     "deputies": []
   },
-  "RU-MO": {"governor_veteran": false, "vice_gov": [], "reg_duma": [], "mayors": [], "deputies": [], "notes": "Открытых данных нет."},
+  "RU-MO": {
+    "governor_veteran": false,
+    "vice_gov": [],
+    "reg_duma": [],
+    "mayors": [],
+    "deputies": [],
+    "notes": "Открытых данных нет."
+  },
   "RU-SAM": {
     "governor_veteran": false,
     "vice_gov": [
-      {"name": "Максим Ковалев", "position": "заместитель губернатора Самарской области", "previous": "аналогичная должность в Вологодской области", "source": "https://www.svoboda.org/a/33710567.html"}
+      {
+        "name": "Максим Ковалев",
+        "position": "заместитель губернатора Самарской области",
+        "previous": "аналогичная должность в Вологодской области",
+        "source": "https://www.svoboda.org/a/33710567.html"
+      }
     ],
     "reg_duma": [],
     "mayors": [
-      {"name": "Сергей Карасев", "unit": "31-я отдельная гвардейская десантно-штурмовая бригада, командир (с 2021)", "position": "вице-мэр Самары (заместитель главы городского округа)", "since": "2026-01-12", "rank": "полковник", "war_crimes_allegation": "Украина обвиняет в расстреле жителя Ирпеня и избиении пожилой женщины", "source": "https://meduza.io/news/2026/01/12/vitse-merom-samary-stal-voennyy-kotorogo-ukraina-obvinila-v-izbienii-i-ubiystve-mirnyh-zhiteley-irpenya"}
+      {
+        "name": "Сергей Карасев",
+        "unit": "31-я отдельная гвардейская десантно-штурмовая бригада, командир (с 2021)",
+        "position": "вице-мэр Самары (заместитель главы городского округа)",
+        "since": "2026-01-12",
+        "rank": "полковник",
+        "war_crimes_allegation": "Украина обвиняет в расстреле жителя Ирпеня и избиении пожилой женщины",
+        "source": "https://meduza.io/news/2026/01/12/vitse-merom-samary-stal-voennyy-kotorogo-ukraina-obvinila-v-izbienii-i-ubiystve-mirnyh-zhiteley-irpenya"
+      }
     ],
     "deputies": [
-      {"name": "Константин Яшин", "position": "генеральный директор центра БПЛА (Самара)", "channel": "Время героев", "source": "https://ru.wikipedia.org/wiki/%D0%92%D1%80%D0%B5%D0%BC%D1%8F_%D0%B3%D0%B5%D1%80%D0%BE%D0%B5%D0%B2"}
+      {
+        "name": "Константин Яшин",
+        "position": "генеральный директор центра БПЛА (Самара)",
+        "channel": "Время героев",
+        "source": "https://ru.wikipedia.org/wiki/%D0%92%D1%80%D0%B5%D0%BC%D1%8F_%D0%B3%D0%B5%D1%80%D0%BE%D0%B5%D0%B2"
+      }
     ]
   },
   "RU-TAM": {
     "governor_veteran": true,
-    "governor": {"name": "Евгений Первышов", "unit": "БАРС «Каскад» (контракт с октября 2022)", "position": "губернатор Тамбовской области", "since": "2024-05 (врио), 2025-09-14 избран (74%)", "channel": "Время героев", "previous": "глава Краснодара, депутат ГД", "caveat": "БАРС-Каскад описан как подразделение для номинальной службы элит без реальных боев", "source": "https://www.svoboda.org/a/33710567.html"},
+    "governor": {
+      "name": "Евгений Первышов",
+      "unit": "БАРС «Каскад» (контракт с октября 2022)",
+      "position": "губернатор Тамбовской области",
+      "since": "2024-05 (врио), 2025-09-14 избран (74%)",
+      "channel": "Время героев",
+      "previous": "глава Краснодара, депутат ГД",
+      "caveat": "БАРС-Каскад описан как подразделение для номинальной службы элит без реальных боев",
+      "source": "https://www.svoboda.org/a/33710567.html"
+    },
     "vice_gov": [],
     "reg_duma": [],
     "mayors": [],
@@ -148,13 +420,28 @@
     "reg_duma": [],
     "mayors": [],
     "deputies": [
-      {"name": "Евгений Чинцов", "unit": "разведка; служба с февраля 2022; Чечня, Ингушетия, Грузия, Сирия", "position": "председатель (спикер) Городской думы Нижнего Новгорода", "since": "2024-09-25", "rank": "полковник, 3 ордена Мужества", "channel": "Время героев", "source": "https://pravda-nn.ru/news/uchastnik-svo-evgenij-chintsov-stal-spikerom-dumy-nizhnego-novgoroda/"}
+      {
+        "name": "Евгений Чинцов",
+        "unit": "разведка; служба с февраля 2022; Чечня, Ингушетия, Грузия, Сирия",
+        "position": "председатель (спикер) Городской думы Нижнего Новгорода",
+        "since": "2024-09-25",
+        "rank": "полковник, 3 ордена Мужества",
+        "channel": "Время героев",
+        "source": "https://pravda-nn.ru/news/uchastnik-svo-evgenij-chintsov-stal-spikerom-dumy-nizhnego-novgoroda/"
+      }
     ]
   },
   "RU-PRI": {
     "governor_veteran": false,
     "vice_gov": [
-      {"name": "Сергей Ефремов †", "unit": "командир добровольческого отряда «Тигр»; глава ДОСААФ Владивостока", "position": "вице-губернатор Приморского края", "since": "2024", "died": "2025 (после повторной отправки на фронт после вторжения ВСУ в Курскую область)", "source": "https://theins.ru/news/278429"}
+      {
+        "name": "Сергей Ефремов †",
+        "unit": "командир добровольческого отряда «Тигр»; глава ДОСААФ Владивостока",
+        "position": "вице-губернатор Приморского края",
+        "since": "2024",
+        "died": "2025 (после повторной отправки на фронт после вторжения ВСУ в Курскую область)",
+        "source": "https://theins.ru/news/278429"
+      }
     ],
     "reg_duma": [],
     "mayors": [],
@@ -165,18 +452,41 @@
     "vice_gov": [],
     "reg_duma": [],
     "mayors": [
-      {"name": "Заур Гурциев †", "unit": "координация ракетных ударов по Мариуполю", "position": "первый заместитель главы Ставрополя", "since": "2024-2025", "died": "2025-05-09 (теракт)", "channel": "Время героев", "war_crimes_allegation": "Украина обвиняла в военных преступлениях против гражданских в Мариуполе", "source": "https://echofm.online/stories/pervyj-zamglavy-stavropolya-i-uchastnik-programmy-vremya-geroev-zaur-gurcziev-pogib-ot-ruk-smertnika"}
+      {
+        "name": "Заур Гурциев †",
+        "unit": "координация ракетных ударов по Мариуполю",
+        "position": "первый заместитель главы Ставрополя",
+        "since": "2024-09",
+        "died": "2025-05-28/29 (теракт; смертник Никита Пеньков)",
+        "channel": "Время героев",
+        "war_crimes_allegation": "Украина обвиняла в военных преступлениях против гражданских в Мариуполе",
+        "source": "https://echofm.online/stories/pervyj-zamglavy-stavropolya-i-uchastnik-programmy-vremya-geroev-zaur-gurcziev-pogib-ot-ruk-smertnika",
+        "notes": "Кавалер 6 наград; готовился к переходу на пост замминистра ЖКХ Ставропольского края. 9 июня 2025 арестован «гражданин Х.» — соучастник."
+      }
     ],
     "deputies": []
   },
   "RU-KLU": {
     "governor_veteran": false,
     "vice_gov": [
-      {"name": "Александр Шляпников", "unit": "не уточнено; 2 ордена Мужества", "position": "заместитель губернатора Калужской области", "since": "2025-02 (около даты выпуска первого потока ВГ)", "channel": "Время героев", "mentor": "Владислав Шапша", "source": "https://fedpress.ru/news/77/policy/3366291"}
+      {
+        "name": "Александр Шляпников",
+        "unit": "не уточнено; 2 ордена Мужества",
+        "position": "заместитель губернатора Калужской области",
+        "since": "2025-02 (около даты выпуска первого потока ВГ)",
+        "channel": "Время героев",
+        "mentor": "Владислав Шапша",
+        "source": "https://fedpress.ru/news/77/policy/3366291"
+      }
     ],
     "reg_duma": [],
     "mayors": [
-      {"name": "Алексей Новоселов", "position": "глава Щучанского района Калужской области", "background": "30 лет служения в церкви до подписания контракта", "source": "https://www.svoboda.org/a/33710567.html"}
+      {
+        "name": "Алексей Новоселов",
+        "position": "глава Щучанского района Калужской области",
+        "background": "30 лет служения в церкви до подписания контракта",
+        "source": "https://www.svoboda.org/a/33710567.html"
+      }
     ],
     "deputies": []
   },
@@ -186,19 +496,44 @@
     "reg_duma": [],
     "mayors": [],
     "deputies": [
-      {"name": "Александр Суразов", "unit": "капитан; 2 ордена Мужества", "position": "министр спорта и молодёжной политики Республики Алтай", "since": "2024-07-31", "channel": "Время героев", "future": "выдвигается на выборы в Госдуму 2026 от ЕР", "source": "https://stadium.ru/news/31-07-2024-uchastnik-svo-aleksandr-surazov-naznachen-predsedatelem-komiteta-po-fizkulture-i-sportu-respubliki-altai"}
+      {
+        "name": "Александр Суразов",
+        "unit": "капитан; 2 ордена Мужества",
+        "position": "министр спорта и молодёжной политики Республики Алтай",
+        "since": "2024-07-31",
+        "channel": "Время героев",
+        "future": "выдвигается на выборы в Госдуму 2026 от ЕР",
+        "source": "https://stadium.ru/news/31-07-2024-uchastnik-svo-aleksandr-surazov-naznachen-predsedatelem-komiteta-po-fizkulture-i-sportu-respubliki-altai"
+      }
     ]
   },
   "RU-EVR": {
     "governor_veteran": false,
-    "governor": {"name": "Мария Костюк", "position": "врио губернатора Еврейской АО", "since": "2024-10-23", "note": "лично не воевала; сын погиб на фронте; руководитель программы «Время героев»", "source": "https://www.svoboda.org/a/33710567.html"},
+    "governor": {
+      "name": "Мария Костюк",
+      "position": "врио губернатора Еврейской АО",
+      "since": "2024-10-23",
+      "note": "лично не воевала; сын погиб на фронте; руководитель программы «Время героев»",
+      "source": "https://www.svoboda.org/a/33710567.html"
+    },
     "vice_gov": [],
     "reg_duma": [],
     "mayors": [
-      {"name": "Алексей Кузьмин", "position": "глава администрации г. Биробиджана", "channel": "учасник СВО", "note": "единственная столица субъекта РФ во главе с участником СВО", "source": "https://www.svoboda.org/a/33710567.html"}
+      {
+        "name": "Алексей Кузьмин",
+        "position": "глава администрации г. Биробиджана",
+        "channel": "учасник СВО",
+        "note": "единственная столица субъекта РФ во главе с участником СВО",
+        "source": "https://www.svoboda.org/a/33710567.html"
+      }
     ],
     "deputies": [
-      {"name": "не назван публично", "position": "спикер городской думы Биробиджана", "channel": "учасник СВО", "source": "https://www.svoboda.org/a/33710567.html"}
+      {
+        "name": "не назван публично",
+        "position": "спикер городской думы Биробиджана",
+        "channel": "учасник СВО",
+        "source": "https://www.svoboda.org/a/33710567.html"
+      }
     ]
   },
   "RU-VLG": {
@@ -207,7 +542,14 @@
     "reg_duma": [],
     "mayors": [],
     "deputies": [
-      {"name": "Кирилл Джавлах", "unit": "разведка", "position": "министр региональной безопасности Вологодской области (новое министерство)", "since": "2025", "channel": "Время героев / прямое назначение Г.Филимонова", "source": "https://cherinfo.ru/news/134392-veteran-svo-budet-rabotat-v-pravitelstve-vologodskoj-oblasti"}
+      {
+        "name": "Кирилл Джавлах",
+        "unit": "разведка",
+        "position": "министр региональной безопасности Вологодской области (новое министерство)",
+        "since": "2025",
+        "channel": "Время героев / прямое назначение Г.Филимонова",
+        "source": "https://cherinfo.ru/news/134392-veteran-svo-budet-rabotat-v-pravitelstve-vologodskoj-oblasti"
+      }
     ]
   },
   "RU-KAM": {
@@ -216,7 +558,14 @@
     "reg_duma": [],
     "mayors": [],
     "deputies": [
-      {"name": "Сергей Кузьминчук", "unit": "155-я отдельная бригада морской пехоты Тихоокеанского флота", "position": "федеральный инспектор по Камчатскому краю (аппарат полпреда)", "since": "2024-2025", "war_crimes_allegation": "Украина обвиняет в убийствах гражданских в Буче и Ирпене", "source": "https://novayagazeta.eu/articles/2024/08/21/liudi-s-pravilnoi-zhiznennoi-pozitsiei"}
+      {
+        "name": "Сергей Кузьминчук",
+        "unit": "155-я отдельная бригада морской пехоты Тихоокеанского флота",
+        "position": "федеральный инспектор по Камчатскому краю (аппарат полпреда)",
+        "since": "2024-2025",
+        "war_crimes_allegation": "Украина обвиняет в убийствах гражданских в Буче и Ирпене",
+        "source": "https://novayagazeta.eu/articles/2024/08/21/liudi-s-pravilnoi-zhiznennoi-pozitsiei"
+      }
     ]
   },
   "RU-KIR": {
@@ -224,8 +573,20 @@
     "vice_gov": [],
     "reg_duma": [],
     "mayors": [
-      {"name": "Никита Горелов", "position": "глава города Сосновка Кировской области", "since": "2024", "channel": "прямые выборы (единственный случай среди мунич.глав-ветеранов)", "source": "https://www.svoboda.org/a/33710567.html"},
-      {"name": "Артем Заболотских", "position": "глава Демьяновского городского поселения Подосиновского района", "since": "2024", "issue": "выиграл выборы, но МО не отпустило с фронта; уголовное дело о СОЧ", "source": "https://regcomment.ru/main/mer-veteran-iz-kirovskoj-oblasti-otstoyal-svoj-post/"}
+      {
+        "name": "Никита Горелов",
+        "position": "глава города Сосновка Кировской области",
+        "since": "2024",
+        "channel": "прямые выборы (единственный случай среди мунич.глав-ветеранов)",
+        "source": "https://www.svoboda.org/a/33710567.html"
+      },
+      {
+        "name": "Артем Заболотских",
+        "position": "глава Демьяновского городского поселения Подосиновского района",
+        "since": "2024",
+        "issue": "выиграл выборы, но МО не отпустило с фронта; уголовное дело о СОЧ",
+        "source": "https://regcomment.ru/main/mer-veteran-iz-kirovskoj-oblasti-otstoyal-svoj-post/"
+      }
     ],
     "deputies": []
   },
@@ -234,7 +595,13 @@
     "vice_gov": [],
     "reg_duma": [],
     "mayors": [
-      {"name": "Руслан Александров", "position": "глава Березовского района ХМАО", "since": "2024-2025", "note": "первый прецедент в РФ — ветеран СВО на должности мэра/главы района", "source": "https://ura.news/news/1052760337"}
+      {
+        "name": "Руслан Александров",
+        "position": "глава Березовского района ХМАО",
+        "since": "2024-2025",
+        "note": "первый прецедент в РФ — ветеран СВО на должности мэра/главы района",
+        "source": "https://ura.news/news/1052760337"
+      }
     ],
     "deputies": []
   },
@@ -244,7 +611,13 @@
     "reg_duma": [],
     "mayors": [],
     "deputies": [
-      {"name": "Владислав Сахаров", "position": "депутат городской думы Ижевска (мандат передан)", "since": "2025-10-16", "channel": "передача мандата мобилизованному", "source": "https://www.vedomosti.ru/strana/privolzhsky/news/2025/10/16/1147395-mandat-deputata-gordumi"}
+      {
+        "name": "Владислав Сахаров",
+        "position": "депутат городской думы Ижевска (мандат передан)",
+        "since": "2025-10-16",
+        "channel": "передача мандата мобилизованному",
+        "source": "https://www.vedomosti.ru/strana/privolzhsky/news/2025/10/16/1147395-mandat-deputata-gordumi"
+      }
     ]
   },
   "RU-KK": {
@@ -253,7 +626,14 @@
     "reg_duma": [],
     "mayors": [],
     "deputies": [
-      {"name": "Сергей Сокол", "unit": "БАРС-Каскад (контракт; реальное участие в боевых действиях оспаривается)", "position": "спикер Верховного Совета Республики Хакасия", "since": "2023", "previous": "депутат ГД", "source": "https://www.svoboda.org/a/33710567.html"}
+      {
+        "name": "Сергей Сокол",
+        "unit": "БАРС-Каскад (контракт; реальное участие в боевых действиях оспаривается)",
+        "position": "спикер Верховного Совета Республики Хакасия",
+        "since": "2023",
+        "previous": "депутат ГД",
+        "source": "https://www.svoboda.org/a/33710567.html"
+      }
     ]
   },
   "RU-TOM": {
@@ -262,21 +642,176 @@
     "reg_duma": [],
     "mayors": [],
     "deputies": [
-      {"name": "не назван публично", "position": "спикер думы г. Томск (постоянная должность)", "channel": "учасник СВО", "source": "https://www.svoboda.org/a/33710567.html"},
-      {"name": "не назван публично", "position": "спикер думы ЗАТО Северск", "channel": "учасник СВО", "source": "https://www.svoboda.org/a/33710567.html"}
+      {
+        "name": "не назван публично",
+        "position": "спикер думы г. Томск (постоянная должность)",
+        "channel": "учасник СВО",
+        "source": "https://www.svoboda.org/a/33710567.html"
+      },
+      {
+        "name": "не назван публично",
+        "position": "спикер думы ЗАТО Северск",
+        "channel": "учасник СВО",
+        "source": "https://www.svoboda.org/a/33710567.html"
+      }
     ]
   },
   "RU-FED": {
     "_note": "Федеральные/окуппированные позиции — отдельный список (не привязан к субъекту):",
     "federal_appointments": [
-      {"name": "Артем Жога", "position": "полномочный представитель президента в УрФО", "since": "2024-10-30", "rank": "Герой ДНР", "unit": "командир батальона «Спарта»", "channel": "прямое назначение Путиным; «Время героев»", "source": "https://ru.wikipedia.org/wiki/%D0%96%D0%BE%D0%B3%D0%B0,_%D0%90%D1%80%D1%82%D0%B5%D0%BC_%D0%92%D0%BB%D0%B0%D0%B4%D0%B8%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B8%D1%87"},
-      {"name": "Артур Орлов", "position": "председатель правления «Движения первых»", "rank": "Герой России", "channel": "Время героев"},
-      {"name": "Владислав Головин", "position": "начальник Главного штаба Юнармии", "rank": "Герой России, морпих", "channel": "Время героев"},
-      {"name": "Владимир Сайбель", "position": "заместитель председателя Комиссии при Президенте РФ по делам ветеранов", "rank": "Герой России", "channel": "Время героев"},
-      {"name": "Андрей Порошин", "position": "советник министра природных ресурсов РФ", "since": "2025", "background": "кадровый военный, артиллерия", "note": "единственный в федеральном правительстве"},
-      {"name": "Юрий Нимченко", "position": "сенатор Совета Федерации от «Крыма»", "since": "2024", "background": "рядовой контрактник без высшего образования", "source": "https://www.svoboda.org/a/33710567.html"},
-      {"name": "Дмитрий Саблин", "position": "депутат Госдумы VIII созыва, зам.пред. комитета по обороне", "rank": "Герой России", "note": "первый зам.пред. «Боевого братства»; на фронте — осень 2022", "source": "https://ru.wikipedia.org/wiki/%D0%A1%D0%B0%D0%B1%D0%BB%D0%B8%D0%BD,_%D0%94%D0%BC%D0%B8%D1%82%D1%80%D0%B8%D0%B9_%D0%92%D0%B0%D0%B4%D0%B8%D0%BC%D0%BE%D0%B2%D0%B8%D1%87"},
-      {"name": "Олег Голиков", "position": "депутат Госдумы (ЕР)", "note": "осужден заочно на Украине на 15 лет (3 сентября 2025)", "source": "https://www.currenttime.tv/a/33727391.html"}
+      {
+        "name": "Артем Жога",
+        "position": "полномочный представитель президента в УрФО",
+        "since": "2024-10-30",
+        "rank": "Герой ДНР",
+        "unit": "командир батальона «Спарта»",
+        "channel": "прямое назначение Путиным; «Время героев»",
+        "source": "https://ru.wikipedia.org/wiki/%D0%96%D0%BE%D0%B3%D0%B0,_%D0%90%D1%80%D1%82%D0%B5%D0%BC_%D0%92%D0%BB%D0%B0%D0%B4%D0%B8%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B8%D1%87"
+      },
+      {
+        "name": "Артур Орлов",
+        "position": "председатель правления «Движения первых»",
+        "rank": "Герой России",
+        "channel": "Время героев"
+      },
+      {
+        "name": "Владислав Головин",
+        "position": "начальник Главного штаба Юнармии",
+        "rank": "Герой России, морпих",
+        "channel": "Время героев"
+      },
+      {
+        "name": "Владимир Сайбель",
+        "position": "заместитель председателя Комиссии при Президенте РФ по делам ветеранов",
+        "rank": "Герой России",
+        "channel": "Время героев"
+      },
+      {
+        "name": "Андрей Порошин",
+        "position": "советник министра природных ресурсов РФ",
+        "since": "2025",
+        "background": "кадровый военный, артиллерия",
+        "note": "единственный в федеральном правительстве"
+      },
+      {
+        "name": "Юрий Нимченко",
+        "position": "сенатор Совета Федерации от «Крыма»",
+        "since": "2024",
+        "background": "рядовой контрактник без высшего образования",
+        "source": "https://www.svoboda.org/a/33710567.html"
+      },
+      {
+        "name": "Дмитрий Саблин",
+        "position": "депутат Госдумы VIII созыва, зам.пред. комитета по обороне",
+        "rank": "Герой России",
+        "note": "первый зам.пред. «Боевого братства»; на фронте — осень 2022",
+        "source": "https://ru.wikipedia.org/wiki/%D0%A1%D0%B0%D0%B1%D0%BB%D0%B8%D0%BD,_%D0%94%D0%BC%D0%B8%D1%82%D1%80%D0%B8%D0%B9_%D0%92%D0%B0%D0%B4%D0%B8%D0%BC%D0%BE%D0%B2%D0%B8%D1%87"
+      },
+      {
+        "name": "Олег Голиков",
+        "position": "депутат Госдумы (ЕР)",
+        "note": "осужден заочно на Украине на 15 лет (3 сентября 2025)",
+        "source": "https://www.currenttime.tv/a/33727391.html"
+      },
+      {
+        "name": "Анна Цивилёва",
+        "position": "статс-секретарь — заместитель министра обороны РФ; председатель государственного фонда «Защитники Отечества»",
+        "since": "2024-06 (МО); 2023 (фонд)",
+        "note": "Двоюродная племянница Путина (по матери). Аудит фонда июнь 2025 — формально без замечаний. Бюджет фонда 2025: план 13,7 млрд ₽ → факт 42,66 млрд ₽ (3х превышение). Зарплаты 2200 сотрудников — 7,65 млрд ₽. На сопровождении 108 551 ветеран (16.04.2025). Рост сбережений Цивилёвой за 2024-2025 — в 5 раз («Можем Объяснить» / CurrentTime).",
+        "source": "https://www.currenttime.tv/"
+      },
+      {
+        "name": "Павел Якушев",
+        "position": "советник заместителя гендиректора по персоналу/патриотическому воспитанию ГК «Росатом»",
+        "rank": "капитан, кавалер ордена Мужества",
+        "channel": "Время героев",
+        "since": "2024",
+        "source": "https://t.me/vremyageroev2024"
+      },
+      {
+        "name": "Александр Загайнов",
+        "position": "главный советник в полпредстве УрФО (под А.Жогой)",
+        "channel": "Время героев",
+        "since": "2025-03",
+        "source": "https://www.vedomosti.ru/"
+      },
+      {
+        "name": "Дмитрий Мячин",
+        "position": "советник Министра труда и социальной защиты РФ",
+        "rank": "кавалер ордена Мужества",
+        "channel": "Время героев",
+        "since": "2024",
+        "source": "https://www.svoboda.org/a/33710567.html"
+      },
+      {
+        "name": "Владимир Манохин",
+        "position": "заместитель министра спорта Республики Крым",
+        "rank": "Герой России + кавалер ордена Мужества",
+        "channel": "Время героев",
+        "since": "2025",
+        "source": "https://prospect.com.ru/"
+      }
+    ]
+  },
+  "RU-TUL": {
+    "reg_duma": [
+      {
+        "name": "Андрей Дубровский",
+        "position": "председатель Тульской областной думы",
+        "channel": "Время героев",
+        "since": "2025",
+        "source": "https://www.svoboda.org/a/33710567.html"
+      }
+    ]
+  },
+  "RU-SPE": {
+    "mayors": [
+      {
+        "name": "Николай Королев",
+        "position": "позиция в правительстве Санкт-Петербурга",
+        "channel": "Время героев Санкт-Петербурга (наставник — А.Беглов)",
+        "since": "2024-2025",
+        "source": "https://peterburg2.ru/"
+      }
+    ],
+    "notes": "Региональная программа «Время героев Санкт-Петербурга»: апрель 2026 — 21 выпускник массово трудоустроен в Смольном (молодежная политика, спорт, экология, культура, цифровизация); поименный состав публично не раскрыт."
+  },
+  "RU-KDA": {
+    "deputies": [
+      {
+        "name": "Сергей Кривченко",
+        "position": "заместитель министра образования и науки Краснодарского края",
+        "unit": "кавалер ордена Мужества",
+        "channel": "Время героев",
+        "since": "2025-10",
+        "source": "https://93.ru/"
+      },
+      {
+        "name": "Георгий Кольцов",
+        "position": "депутат (ЕДГ-2025)",
+        "channel": "региональная программа «Герои Кубани»",
+        "since": "2025-09",
+        "source": "https://93.ru/"
+      },
+      {
+        "name": "Кирилл Черноусов",
+        "position": "депутат (ЕДГ-2025)",
+        "channel": "региональная программа «Герои Кубани»",
+        "since": "2025-09",
+        "source": "https://93.ru/"
+      }
+    ]
+  },
+  "RU-ALT": {
+    "deputies": [
+      {
+        "name": "Никита Рыжих",
+        "position": "заместитель министра социальной защиты Алтайского края",
+        "unit": "кавалер двух орденов Мужества",
+        "channel": "Время героев",
+        "since": "2025",
+        "source": "https://prospect.com.ru/"
+      }
     ]
   }
 }
